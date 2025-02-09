@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "dask-hpc"
+version = "0.1.0"
+description = "Custom SLURM cluster for Dask"
+authors = ["Maciej Nessel <nessel@student.agh.edu.pl>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dask = {version = "2024.8.0", extras = ["complete", "dataframe"]}
+dask-jobqueue = "0.8.5"
+bokeh = ">=3.1.dev0"
+jupyter-bokeh = "4.0.5"
+matplotlib = "3.4.3"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pycodestyle]
+max-line-length = "120"
