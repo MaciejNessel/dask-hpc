@@ -13,7 +13,6 @@ dask = {version = "2024.8.0", extras = ["complete", "dataframe"]}
 dask-jobqueue = "0.8.5"
 bokeh = ">=3.1.dev0"
 jupyter-bokeh = "4.0.5"
-matplotlib = "3.4.3"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"
